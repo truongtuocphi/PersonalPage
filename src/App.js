@@ -14,23 +14,23 @@ function App() {
   const socialNetwork = [
     {
       title: "Facebook",
-      icon: <FacebookIcon className="size-4 text-white" />,
-      link: "/",
+      icon: <FacebookIcon className="size-4 text-white sm:size-5" />,
+      link: "https://www.facebook.com/profile.php?id=100010928469657",
     },
     {
       title: "Github",
-      icon: <GithubIcon className="size-4 text-white" />,
-      link: "/",
+      icon: <GithubIcon className="size-4 text-white sm:size-5" />,
+      link: "https://github.com/truongtuocphi",
     },
     {
       title: "Instagram",
-      icon: <InstagramIcon className="size-4 text-white" />,
-      link: "/",
+      icon: <InstagramIcon className="size-4 text-white sm:size-5" />,
+      link: "https://www.instagram.com/truong_phii_/",
     },
     {
       title: "Twitter",
-      icon: <XIcon className="size-4 text-white" />,
-      link: "/",
+      icon: <XIcon className="size-4 text-white sm:size-5" />,
+      link: "https://twitter.com/tuoc_phi",
     },
   ];
 
@@ -47,30 +47,41 @@ function App() {
   }, []);
 
   return (
-    <div className="w-full h-screen bg-slate-900 flex flex-col justify-center items-center">
-      <div className="flex items-center gap-14">
-        <img src={avatar} alt="avatar" className="size-36 rounded-full" />
-        <div className="flex flex-col gap-6">
-          <div className="text-white font-bold text-4xl tracking-wide">
+    <div className="w-full h-screen bg-slate-900 flex flex-col justify-center items-center p-20">
+      <div className="flex items-center gap-5 md:gap-14">
+        <img
+          src={avatar}
+          alt="avatar"
+          className="size-28 rounded-full sm:size-36"
+        />
+        <div className="flex flex-col gap-2 sm:gap-6">
+          <div className="text-white font-bold text-4xl tracking-wide sm:text-4xl">
             Hi, I'm
           </div>
           <div
             id="name"
-            className="text-blue-900 font-bold text-6xl tracking-widest"
+            className="text-blue-900 font-bold text-4xl tracking-widest md:text-6xl"
           ></div>
         </div>
       </div>
       <div className="mt-12">
         <div
           id="content"
-          className="text-4xl text-white font-bold tracking-widest"
+          className="text-2xl text-white text-center font-bold tracking-widest md:text-5xl"
         ></div>
-        <div className="flex justify-center gap-4 mt-4">
+        <div className="flex justify-center gap-8 mt-8">
           {socialNetwork.map((items) => (
-            <a href={items.link} key={items.title}>
+            <a
+              href={items.link}
+              key={items.title}
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="flex items-center gap-2">
                 {items.icon}
-                <p className="text-white font-thin text-sm">{items.title}</p>
+                <p className="text-white font-thin text-xs sm:text-sm">
+                  {items.title}
+                </p>
               </div>
             </a>
           ))}
