@@ -60,7 +60,7 @@ function App() {
           </div>
           <div
             id="name"
-            className="text-blue-900 font-bold text-2xl tracking-widest md:text-6xl"
+            className="text-blue-900 font-bold text-3xl tracking-widest md:text-6xl"
           >
             Truong Tuoc Phi
           </div>
@@ -69,7 +69,7 @@ function App() {
       <div className="mt-12">
         <div
           id="content"
-          className="text-lg text-white text-center font-bold tracking-widest md:text-5xl"
+          className="text-2xl text-white text-center font-bold tracking-widest md:text-5xl"
         >
           I'm a web developer
         </div>
