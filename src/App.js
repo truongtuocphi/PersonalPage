@@ -52,7 +52,7 @@ function App() {
         <img
           src={avatar}
           alt="avatar"
-          className="size-28 rounded-full sm:size-36"
+          className="size-32 rounded-full sm:size-36"
         />
         <div className="flex flex-col gap-2 sm:gap-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
           <div className="text-white font-normal text-lg tracking-wide sm:text-4xl sm:font-bold">
