@@ -1,6 +1,6 @@
 import "./App.css";
-import { gsap } from "gsap-trial";
-import ScrambleTextPlugin from "gsap-trial/ScrambleTextPlugin";
+// import { gsap } from "gsap-trial";
+// import ScrambleTextPlugin from "gsap-trial/ScrambleTextPlugin";
 import avatar from "./images/avatar.jpg";
 import FacebookIcon from "./icons/FacebookIcon";
 import GithubIcon from "./icons/GithubIcon";
@@ -8,7 +8,7 @@ import InstagramIcon from "./icons/InstagramIcon";
 import XIcon from "./icons/XIcon";
 // import { useEffect } from "react";
 
-gsap.registerPlugin(ScrambleTextPlugin);
+// gsap.registerPlugin(ScrambleTextPlugin);
 
 function App() {
   const socialNetwork = [
@@ -18,7 +18,7 @@ function App() {
       link: "https://www.facebook.com/profile.php?id=100010928469657",
     },
     {
-      title: "Github",
+      title: "GitHub",
       icon: <GithubIcon className="size-4 text-white sm:size-5" />,
       link: "https://github.com/truongtuocphi",
     },
