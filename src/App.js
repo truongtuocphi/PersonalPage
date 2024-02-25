@@ -47,20 +47,20 @@ function App() {
   // }, []);
 
   return (
-    <div className="w-full h-screen bg-slate-900 flex flex-col justify-center items-center p-20">
+    <div className="w-full h-screen bg-slate-900 flex flex-col justify-center items-center p-10">
       <div className="flex flex-col items-center gap-5 md:gap-14 md:flex-row">
         <img
           src={avatar}
           alt="avatar"
-          className="size-28 rounded-full sm:size-36"
+          className="size-24 rounded-full sm:size-36"
         />
         <div className="flex flex-col gap-2 sm:gap-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-          <div className="text-white font-normal text-2xl tracking-wide sm:text-4xl sm:font-bold">
+          <div className="text-white font-normal text-xl tracking-wide sm:text-4xl sm:font-bold">
             Hi, I'm
           </div>
           <div
             id="name"
-            className="text-blue-900 font-bold text-4xl tracking-widest md:text-6xl"
+            className="text-blue-900 font-bold text-xl tracking-widest md:text-6xl"
           >
             Truong Tuoc Phi
           </div>
@@ -69,7 +69,7 @@ function App() {
       <div className="mt-12">
         <div
           id="content"
-          className="text-2xl text-white text-center font-bold tracking-widest md:text-5xl"
+          className="text-base text-white text-center font-bold tracking-widest md:text-5xl"
         >
           I'm a web developer
         </div>
@@ -83,7 +83,7 @@ function App() {
             >
               <div className="flex items-center gap-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                 {items.icon}
-                <p className="text-white font-thin text-xs hidden sm:text-sm sm:block">
+                <p className="text-white font-thin text-xs hidden sm:text-sm">
                   {items.title}
                 </p>
               </div>
