@@ -55,12 +55,12 @@ function App() {
           className="size-24 rounded-full sm:size-36"
         />
         <div className="flex flex-col gap-2 sm:gap-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-          <div className="text-white font-normal text-xl tracking-wide sm:text-4xl sm:font-bold">
+          <div className="text-white font-normal text-lg tracking-wide sm:text-4xl sm:font-bold">
             Hi, I'm
           </div>
           <div
             id="name"
-            className="text-blue-900 font-bold text-xl tracking-widest md:text-6xl"
+            className="text-blue-900 font-bold text-2xl tracking-widest md:text-6xl"
           >
             Truong Tuoc Phi
           </div>
@@ -69,7 +69,7 @@ function App() {
       <div className="mt-12">
         <div
           id="content"
-          className="text-base text-white text-center font-bold tracking-widest md:text-5xl"
+          className="text-lg text-white text-center font-bold tracking-widest md:text-5xl"
         >
           I'm a web developer
         </div>
