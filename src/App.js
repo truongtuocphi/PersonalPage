@@ -6,7 +6,7 @@ import FacebookIcon from "./icons/FacebookIcon";
 import GithubIcon from "./icons/GithubIcon";
 import InstagramIcon from "./icons/InstagramIcon";
 import XIcon from "./icons/XIcon";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 gsap.registerPlugin(ScrambleTextPlugin);
 
@@ -34,17 +34,17 @@ function App() {
     },
   ];
 
-  useEffect(() => {
-    gsap.to(document.querySelector("#name"), {
-      duration: 2,
-      scrambleText: "Truong Tuoc Phi",
-    });
+  // useEffect(() => {
+  //   gsap.to(document.querySelector("#name"), {
+  //     duration: 2,
+  //     scrambleText: "Truong Tuoc Phi",
+  //   });
 
-    gsap.to(document.querySelector("#content"), {
-      duration: 2,
-      scrambleText: "I'm a web developer",
-    });
-  }, []);
+  //   gsap.to(document.querySelector("#content"), {
+  //     duration: 2,
+  //     scrambleText: "I'm a web developer",
+  //   });
+  // }, []);
 
   return (
     <div className="w-full h-screen bg-slate-900 flex flex-col justify-center items-center p-20">
@@ -61,14 +61,18 @@ function App() {
           <div
             id="name"
             className="text-blue-900 font-bold text-4xl tracking-widest md:text-6xl"
-          ></div>
+          >
+            Truong Tuoc Phi
+          </div>
         </div>
       </div>
       <div className="mt-12">
         <div
           id="content"
           className="text-2xl text-white text-center font-bold tracking-widest md:text-5xl"
-        ></div>
+        >
+          I'm a web developer
+        </div>
         <div className="flex justify-center gap-8 mt-8">
           {socialNetwork.map((items) => (
             <a
